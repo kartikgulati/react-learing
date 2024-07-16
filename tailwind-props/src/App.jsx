@@ -16,7 +16,7 @@ function App() {
       Test Card
     </h1>
 
-    <Card name="kartik" btntext="btn1"/>
+    <Card showObj={myObj} name="kartik" btntext="btn1"/>
     <Card />
     
     </>
