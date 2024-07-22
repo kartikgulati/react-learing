@@ -10,7 +10,7 @@ function App() {
   let [counter,setCounter] = useState(0)
 
   const addValue= () =>{
-    console.log("clicked", counter, 'random' ,Math.random())
+    console.log("clicked", counter, 'random' ,Math.random()) //click check
     setCounter(counter+1)
   }
 
