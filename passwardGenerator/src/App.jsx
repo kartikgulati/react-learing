@@ -53,8 +53,11 @@ function App() {
       passwordRef.current?.select();
       passwordRef.current?.setSelectionRange(0,100);
       window.navigator.clipboard.writeText(password)
+    
       setbuttontext("Copied")
       setdisplayCopyText("text is Copied")
+      //  adding the alert message when click using the useRef
+      // alert("Password Copied") 
   },[password])
 
 useEffect(() => {passwordGenerator()},[length, numberAllowed, charAllowed, passwordGenerator])
