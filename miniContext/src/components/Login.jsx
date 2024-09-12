@@ -1,10 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React,{useState, useContext} from 'react'
 import UserContext from '../context/userContext'
 
 const Login = () => {
    
     const [username, setUsername] = useState('')
-    const [password, setPassword] = useState(' ')
+    const [password, setPassword] = useState('')
 
     // eslint-disable-next-line no-unused-vars
     const{setUser} = useContext(UserContext)
@@ -21,7 +22,7 @@ const Login = () => {
          placeholder='username'
          />
 
-        <input type="text"
+        <input type="password"
         value={password}
          placeholder='password'
          onChange={(e)=>setPassword(e.target.value)}
